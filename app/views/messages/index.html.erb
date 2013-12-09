@@ -1,0 +1,37 @@
+<h1>Listing messages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>App</th>
+      <th>Username</th>
+      <th>Active</th>
+      <th>To</th>
+      <th>From</th>
+      <th>Encryptedmessage</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @messages.each do |message| %>
+      <tr>
+        <td><%= message.app_id %></td>
+        <td><%= message.username %></td>
+        <td><%= message.active %></td>
+        <td><%= message.to %></td>
+        <td><%= message.from %></td>
+        <td><%= message.EncryptedMessage %></td>
+        <td><%= link_to 'Show', message %></td>
+        <td><%= link_to 'Edit', edit_message_path(message) %></td>
+        <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Message', new_message_path %>

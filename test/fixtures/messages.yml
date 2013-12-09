@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  app_id: 1
+  username: MyString
+  active: false
+  to: MyString
+  from: MyString
+  EncryptedMessage: MyString
+
+two:
+  app_id: 1
+  username: MyString
+  active: false
+  to: MyString
+  from: MyString
+  EncryptedMessage: MyString

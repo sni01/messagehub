@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>App:</strong>
+  <%= @message.app_id %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @message.username %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @message.active %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @message.to %>
+</p>
+
+<p>
+  <strong>From:</strong>
+  <%= @message.from %>
+</p>
+
+<p>
+  <strong>Encryptedmessage:</strong>
+  <%= @message.EncryptedMessage %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
